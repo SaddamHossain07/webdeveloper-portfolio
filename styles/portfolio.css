@@ -156,6 +156,7 @@ main {
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    margin-top: 0;
 }
 
 .section-description {
@@ -171,4 +172,38 @@ main {
     display: flex;
     justify-content: space-around;
     text-align: center;
+}
+
+
+/* what-i-do- section */
+#what-i-do-description {
+    padding: 10px 130px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.skills {
+    width: 240px;
+    height: 300px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 5px rgba(0, 0, 0, 0.06);
+    padding: 50px 40px;
+}
+
+.skills-title {
+    color: #181818;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skills-description {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
 }
