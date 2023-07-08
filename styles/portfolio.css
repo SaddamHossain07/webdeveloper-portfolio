@@ -1,6 +1,7 @@
 /* Global styles */
 * {
     font-family: 'Open Sans', sans-serif;
+    transition: 0.3s;
 }
 
 .text-primary {
@@ -33,7 +34,11 @@
     color: #474747;
     font-size: 20px;
     font-weight: 400;
+}
 
+.nav li:hover {
+    color: #333232;
+    border-bottom: 2px solid #FD6E0A;
 }
 
 .nav a {
@@ -50,6 +55,16 @@
     padding: 15px 35px;
 }
 
+.nav button:hover {
+    background: #FFF8F3;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FD6E0A;
+}
+
 /* header section styles */
 .header {
     background-color: #FFF8F3;
@@ -64,9 +79,7 @@
     padding: 30px 30px 0px 150px;
     display: flex;
     align-items: center;
-    /* background-image: url("../images/developer.png");
-    background-repeat: no-repeat;
-    background-position: left top; */
+    justify-content: space-between;
 }
 
 .banner-img {
@@ -77,12 +90,15 @@
     color: #474747;
     font-size: 45px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .banner-head {
     color: #181818;
     font-size: 85px;
     font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .banner-description {
@@ -96,9 +112,63 @@
     line-height: 30px;
 }
 
-.banner button {
+.banner-button {
     width: 200px;
     height: 64px;
     flex-shrink: 0;
     border: 0;
+    border-radius: 5px;
+    background: #FD6E0A;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner-button:hover {
+    background: #FFF8F3;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FD6E0A;
+}
+
+
+/* main section */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section */
+.about-section {
+    margin: 130px 0px;
+    background-color: #FFF8F3;
+    padding: 130px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-description {
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 10px 0;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
